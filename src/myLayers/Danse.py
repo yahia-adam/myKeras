@@ -9,6 +9,7 @@ class myDense():
         self.kernel_initializer = kernel_initializer
         self.weights = None
         self.activations = None
+        self.gradients = None
         self.bias = None
 
     def __call__(self, inputs):

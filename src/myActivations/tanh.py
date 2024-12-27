@@ -1,4 +1,8 @@
 from math import exp
 
 def myTanh(x):
-    return 1 - (2 / (1 + exp(2*x)))
+    return (exp(x) - exp(-x)) / (exp(x) + exp(-x))
+
+def myTanh_prime(x):
+    t = myTanh(x)
+    return 1 - t*t
