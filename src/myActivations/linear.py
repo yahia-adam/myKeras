@@ -1,2 +1,2 @@
-def myLinear(x):
+def myLinear(x: float) -> float:
     return x
